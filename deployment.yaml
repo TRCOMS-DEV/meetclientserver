@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: meetclientserver
+  namespace: trivoh  
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: meetclientserver
+  template:
+    metadata:
+      labels:
+        app: meetclientserver
+    spec:
+      containers:
+      - name: meetclientserver
+        image: trivohaks.azurecr.io/trivohaks/aks/meetclientserver:latest
+        ports:
+        - containerPort: 80
