@@ -102,7 +102,7 @@ jobs:
       # Delete existing deployment in order to avoid any conflicts,
       - name: Delete Existing Resources
         run: |
-          kubectl delete deployment trivohapi --namespace trivoh
+          kubectl delete deployment meetclientserver --namespace trivoh
 
       # Deploys application based on given manifest file
       - name: Deploys application
