@@ -36,7 +36,7 @@ on:
 
 env:
   AZURE_CONTAINER_REGISTRY: "trivohaks"
-  CONTAINER_NAME: "trivohaks/aks/trivohapi"
+  CONTAINER_NAME: "trivohaks/aks/meetclientserver"
   RESOURCE_GROUP: "trivoh-aks-resource-group"
   CLUSTER_NAME: "trivoh-aks"
   DEPLOYMENT_MANIFEST_PATH: "deployment.yaml"
